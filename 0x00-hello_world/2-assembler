@@ -1,1 +1,2 @@
-#!/bin/bash\ngcc -s -save-temps $CFILE
+#!/bin/bash
+gcc -s -save-temps $CFILE
