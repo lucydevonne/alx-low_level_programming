@@ -1,18 +1,22 @@
 #include <stdio.h>
+
 /**
- * main - print if the number is postive, zero, or negative
+ * main - print possible combination 0-9
  *
- * Description: using the main function
- * this program prints "Programming is positive, zero, or negative
- * Return: 0
+ * Return: zero
  */
 int main(void)
 {
-int n;
-for (n = '0'; n <= '9'; n++)
-{
-	putchar(n);
-}
-putchar('\n');
-return (0);
+	int i;
+
+	for (i = '0'; i <= '9'; i++)
+	{
+		putchar(i);
+		if (i == '9')
+			break;
+		putchar(',');
+		putchar(' ');
+	}
+	putchar('\n');
+	return (0);
 }
