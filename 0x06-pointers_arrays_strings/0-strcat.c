@@ -1,14 +1,13 @@
 #include "main.h"
 
 /**
- *_strcat - concatenates  the string pointed to by @src to
- * the end of the string pointed to by @dest
- *@dest: destination string
- *@src: String that is the source
+ * *_strcat - concatenates two strings.
  *
- * Return: returns pointer to dest
+ * @dest: resulting string.
+ * @src: source string.
+ * Return: pointer to dest
  */
-
+char *_strcat(char *dest, char *src)
 char *_strcat(char *dest, char *src)
 {
 	int i, n;
@@ -22,11 +21,6 @@ char *_strcat(char *dest, char *src)
 	return (dest);
 }
 
-/**
-  * string_length - finds the length of a string.
-  * Return: length of c.
-  * @pointer: pointer.
-  */
 int string_length(char *pointer)
 {
 	int c = 0;
