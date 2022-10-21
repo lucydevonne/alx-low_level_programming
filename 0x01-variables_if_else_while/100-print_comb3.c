@@ -8,29 +8,25 @@
 int main(void)
 {
 	int x;
-	int y = 0;
+	int y;
 
-	while (y < 10)
+	
+	for (x=48; y<=57 ; x++)
 	{
-		x = 0;
-		while (x < 10)
+		for ( y= x+1; y<=57; y++)
+
+		putchar (x);
+		putchar (y);
+
+		if (x==56 && y==57)
 		{
-			if (y != x && y < x)
-			{
-				putchar('0' + y);
-				putchar('0' + x);
-
-				if (x + y != 17)
-				{
-					putchar(',');
-					putchar(' ');
-				}
-			}
-
-			x++;
+			putchar ('\n');
+			break;
 		}
-		y++;
+		
+		putchar (',');
+		putchar (' ');
 	}
-	putchar('\n');
+	
 	return (0);
 }
